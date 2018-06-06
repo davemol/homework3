@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_27ae6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_27ae6.dir/build.make CMakeFiles/cmTC_27ae6.dir/build
+make[1]: ingresso nella directory "/home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp"
+Building C object CMakeFiles/cmTC_27ae6.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_27ae6.dir/CheckSymbolExists.c.o   -c /home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_27ae6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27ae6.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_27ae6.dir/CheckSymbolExists.c.o  -o cmTC_27ae6 -rdynamic 
+CMakeFiles/cmTC_27ae6.dir/CheckSymbolExists.c.o: nella funzione "main":
+CheckSymbolExists.c:(.text+0x16): riferimento non definito a "pthread_create"
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_27ae6.dir/build.make:97: set di istruzioni per l'obiettivo "cmTC_27ae6" non riuscito
+make[1]: *** [cmTC_27ae6] Errore 1
+make[1]: uscita dalla directory "/home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp"
+Makefile:126: set di istruzioni per l'obiettivo "cmTC_27ae6/fast" non riuscito
+make: *** [cmTC_27ae6/fast] Errore 2
+
+File /home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7c96f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7c96f.dir/build.make CMakeFiles/cmTC_7c96f.dir/build
+make[1]: ingresso nella directory "/home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp"
+Building C object CMakeFiles/cmTC_7c96f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7c96f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7c96f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c96f.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_7c96f.dir/CheckFunctionExists.c.o  -o cmTC_7c96f -rdynamic -lpthreads 
+/usr/bin/ld: impossibile trovare -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7c96f.dir/build.make:97: set di istruzioni per l'obiettivo "cmTC_7c96f" non riuscito
+make[1]: *** [cmTC_7c96f] Errore 1
+make[1]: uscita dalla directory "/home/linux-dave96/Documenti/homework3/build/CMakeFiles/CMakeTmp"
+Makefile:126: set di istruzioni per l'obiettivo "cmTC_7c96f/fast" non riuscito
+make: *** [cmTC_7c96f/fast] Errore 2
+
+

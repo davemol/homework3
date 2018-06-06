@@ -1,0 +1,4 @@
+/home/linux-dave96/Documenti/homework3/build/CMakeFiles/rebuild_cache.dir
+/home/linux-dave96/Documenti/homework3/build/CMakeFiles/txt_to_pcd.dir
+/home/linux-dave96/Documenti/homework3/build/CMakeFiles/edit_cache.dir
+/home/linux-dave96/Documenti/homework3/build/CMakeFiles/clustering.dir

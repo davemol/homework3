@@ -1,0 +1,8 @@
+To compile:
+
+mkdir build 
+cd build
+cmake ..
+make
+
+you will find the executables in bin/
