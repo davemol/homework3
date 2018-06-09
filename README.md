@@ -13,10 +13,10 @@ The original version of ORBSLAM2 can only display the information of a rosbag. W
 
 Move into "homework3" directory and use this comand:
 
-mkdir build 
-cd build
-cmake ..
-make
+* mkdir build 
+* cd build
+* cmake ..
+* make
 
 You will find the executables in bin directory
 
