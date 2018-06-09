@@ -35,14 +35,19 @@ Clone the package into ~/catkin_ws/src
 These image is obtain with this rosbag:
 http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/vicon_room1/V1_01_easy/V1_01_easy.bag
 
-ORBSLAM2
+* ORBSLAM2
+
 ![ORBSLAM_Image](image/orb_slam1.png)
+
 ![ORBSLAM_Image](image/orb_slam2.png)
 
 
-CLUSTERING
+* CLUSTERING
+
 ![clustering_image](image/clust1.png)
+
 ![clustering_image](image/clust2.png)
+
 ![clustering_image](image/clust3.png)
 
 ## Author
